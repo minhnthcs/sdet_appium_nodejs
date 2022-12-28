@@ -17,7 +17,8 @@ exports.config = {
     maxInstances: 10,
     sync: true,
     specs: [
-        './PlayWithMocha.js'
+        // './PlayWithMocha.js'
+        './api/click.js'
     ],
     capabilities : [{
         "platformName": "Android",

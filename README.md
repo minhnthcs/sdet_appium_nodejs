@@ -14,7 +14,7 @@ Lesson 3:  Init project and test configuration
 * Setup babel config file for writing code in ES6 syntax
 * Setup mocha testing framework options and test configuration file
 
-Lesson 4: Basic scripts structure and hooks in mocha
+Lesson 4, 5: Basic scripts structure and hooks in mocha
 
 * Form up test suite and hook with Mocha
 * Specify test script to run

@@ -4,7 +4,7 @@ const allure = require('allure-commandline');
 exports.config = {
     runner: 'local',
     port: 4723,
-    hostname: 'localhost',
+    hostname: '127.0.0.1',
     path: '/wd/hub',
     logLevel: 'info',
     framework: 'mocha',
@@ -17,8 +17,15 @@ exports.config = {
     maxInstances: 10,
     sync: true,
     specs: [
-        './src/test_scripts/account/TC_001_Login.js'
+        './PlayWithMocha.js'
     ],
+    capabilities : [{
+        "platformName": "Android",
+        "automationName": "UiAutomator2",
+        "udid": "emulator-5554",
+        "appPackage": "com.wdiodemoapp",
+        "appActivity": ".MainActivity"
+    }],
     reporters: [
         ['allure', {
             outputDir: 'allure-results',

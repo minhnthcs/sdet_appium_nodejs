@@ -18,7 +18,8 @@ exports.config = {
     sync: true,
     specs: [
         // './PlayWithMocha.js'
-        './api/click.js'
+        // './api/click.js'
+        './tests/login.js'
     ],
     capabilities : [{
         "platformName": "Android",
